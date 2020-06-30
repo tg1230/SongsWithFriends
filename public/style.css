@@ -1,0 +1,750 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  min-width: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+}
+
+.stdTxtBtn {
+  font-family: "Open Sans", sans-serif;
+  background-color: #1db954;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 20px;
+  padding: 5px 40px;
+  font-weight: 500;
+  margin: 0px 20px;
+}
+
+.hallow {
+  background-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1db954;
+}
+
+.whiteLogoBtn {
+  background-color: transparent;
+  color: white;
+  font-size: xx-large;
+}
+
+::selection {
+  background: #1db954;
+  color: white;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.SongsWithFriends {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 600px;
+  margin: auto;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  color: black;
+}
+
+.TitleAndExit {
+  display: flex;
+}
+
+#exitIcon {
+  color: black;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#overlayBox {
+  position: absolute;
+  top: 50px;
+  overflow: scroll;
+  height: 350px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+#shareTitle {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  max-width: 550px;
+  width: 100%;
+}
+
+.searchBarButton {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.searchBar {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: small;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #1db954;
+  color: #b3b3b3;
+  max-width: 500px;
+
+  margin-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  width: 100%;
+}
+
+.searchButton {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #1db954;
+  color: white;
+}
+
+.searchResultsHeaders {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchTitle {
+  margin-left: 10px;
+  font-size: small;
+  font-weight: bold;
+  max-width: 190px;
+  width: 100%;
+}
+
+.searchArtist {
+  font-size: small;
+  font-weight: bold;
+  max-width: 175px;
+  width: 100%;
+}
+.search {
+  display: flex;
+  margin-top: 8px;
+  border-top: 1px solid #F0F0F0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.searchResultsa {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Forces the text to hide */
+  text-overflow: ellipsis; /* Turns the hidden text into ... */
+  font-size: small;
+  margin-top: 11px;
+  max-width: 190px;
+  width: 100%;
+}
+
+.searchResultsb {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Forces the text to hide */
+  text-overflow: ellipsis; /* Turns the hidden text into ... */
+  font-size: small;
+  margin-right: 20px;
+  margin-top: 11px;
+  max-width: 155px;
+  width: 100%;
+}
+
+.searchResultsc {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Forces the text to hide */
+  text-overflow: ellipsis; /* Turns the hidden text into ... */
+  font-size: small;
+  margin-right: 20px;
+  margin-top: 11px;
+  max-width: 135px;
+  width: 100%;
+}
+
+.searchAdd {
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  margin-top: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #1db954;
+  color: white;
+  font-size: small;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 4px;
+}
+
+.fa-search {
+  color: #535353;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: xx-large;
+}
+
+#starterSearchText {
+  color: #535353;
+  max-height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.playlistNameContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+  margin-left: 25%;
+}
+
+.headerButtonsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.playlistName {
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 2.5em;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.playerTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playerBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.songContainer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.songTopRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.songName {
+  max-width: 300px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.songInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.otherSongInfo {
+  color: #b3b3b3;
+}
+
+.songTime {
+  color: #b3b3b3;
+}
+
+.otherSongInfoDot {
+  color: #b3b3b3;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.fa-pen {
+  color: #535353;
+  font-size: 1.5em;
+}
+
+.fa-plus {
+  background-color: transparent;
+  color: white;
+  outline: inherit;
+  border: none;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.soundBtn {
+  background-color: transparent;
+  color: #535353;
+  outline: none;
+  border: none;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.muteBtn {
+  margin-left: 50px;
+}
+
+.volUpBtn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+}
+
+.progressBar {
+  height: 5px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #535353;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.filler {
+  background-color: #b3b3b3;
+  height: 100%;
+  border-radius: inherit;
+  max-width: 500px;
+  transition: width 0.2s ease-in;
+}
+
+.currentSongTitle {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.currentSong {
+  padding-top: 10px;
+  color: #b3b3b3;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.currentlyPlaying {
+  font-size: 1.2em;
+  margin: 15px 25px;
+  color: #b3b3b3;
+}
+
+.currentSongProgress {
+  font-weight: 200;
+  margin: 10px;
+}
+
+/* -----------------  Chat ----------------- */
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 350px;
+  position: fixed;
+  right: 8%;
+  bottom: 0px;
+  background: rgb(40, 40, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(40, 40, 40, 1) 35%,
+    rgba(83, 83, 83, 1) 100%
+  );
+}
+
+.messagesContainer {
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.messageContainer {
+  display: flex;
+  margin: 0px 10px 15px 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.isSender {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.message {
+  font-size: 1.5em;
+  padding: 10px;
+  width: 70%;
+  text-align: left;
+  border-radius: 20px;
+  background-color: #b3b3b3;
+  overflow-wrap: break-word;
+  color: black;
+}
+
+.chatTopBar {
+  display: flex;
+  justify-content: space-between;
+  min-height: 0px;
+  cursor: pointer;
+}
+
+.chatTopBar:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chatTitle {
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 1.5em;
+}
+
+.chatCloseButton {
+  font-weight: 800;
+  font-size: larger;
+  margin: 10px 10px;
+  border: 0;
+  color: white;
+  outline: none;
+  min-height: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.messageSender {
+  display: flex;
+  width: auto;
+  background-color: #b3b3b3;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.messageTextInput {
+  flex-grow: 1;
+  background-color: transparent;
+  outline: none;
+  border-width: 0px;
+  font-size: 1.4em;
+  min-width: 0px;
+  margin-left: 10px;
+  padding: 5px 0px;
+}
+
+.messageSendButton {
+  background-color: transparent;
+  outline: none;
+  border-width: 0px;
+  transform: rotate(45deg);
+  font-size: 2em;
+  margin-right: 15px;
+  color: #535353;
+}
+
+.collapsedChatBar {
+  display: flex;
+  width: auto;
+  position: fixed;
+  right: 8%;
+  bottom: 40px;
+  background: #282828;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapsedChatBar:hover {
+  filter: brightness(0.9);
+}
+
+.chatOpenButton {
+  background-color: transparent;
+  border-width: 0px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.userBubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.fa-location-arrow {
+  cursor: pointer;
+}
+
+.fa-location-arrow:hover {
+  filter: brightness(0.7);
+}
+
+.rot-45 {
+  transform: rotate(45deg);
+}
+/* ^^^^^^^^^^^^^^^^^  Chat ^^^^^^^^^^^^^^^^^ */
+
+
+#inviteOverlay {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  color: white;
+}
+
+.inviteContainer {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.inviteLink {
+  font-size: large;
+  cursor: pointer; 
+  text-decoration: underline;
+  color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px 0px;
+    width: 90%;
+  }
+  
+  .headerButtonsContainer {
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0px;
+  }
+  
+  .inviteLogoutButtonGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .playlistNameContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .playlistName {
+    font-size: 1.5em;
+  }
+  
+  .fa-pen {
+    font-size: 1em;
+  }
+  
+  .invite {
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: 500;
+    margin-left: auto;
+    height: auto;
+  }
+  
+  .playlist {
+    width: 90%;
+  }
+  
+  .playerTop {
+    display: flex;
+    flex-direction: row;
+    min-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .playerBottom {
+    justify-content: center;
+  }
+  
+  .soundBtn {
+    font-size: 1.5em;
+  }
+  
+  .muteBtn {
+    margin-left: 0px;
+  }
+
+  .volUpBtn {
+    margin: 0px;
+  }
+  
+  
+  .songInfo {
+    flex-direction: column;
+    align-items: center;
+    min-width: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .currentSongTitle {
+    font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1;
+  }
+  
+  .currentSong {
+    font-size: 0.8em;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 5px;
+  }
+  
+  .progressBar {
+    flex: 1;
+  }
+  
+  .collapsedChatBar {
+    display: none;
+  }
+  
+  .chat {
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  .message {
+    width: 60%;
+  }
+}

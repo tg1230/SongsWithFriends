@@ -1,0 +1,45 @@
+{
+  "name": "SongsWithFriends",
+  "version": "0.0.1",
+  "description": "listen to songs at the same time with friends",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack && babel src -d build",
+    "start": "webpack && node server.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/register": "^7.10.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsx-loader": "^0.13.2",
+    "passport": "^0.4.1",
+    "passport-spotify": "^1.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "request": "^2.88.2",
+    "spotify": "^0.3.0",
+    "sqlite3": "^4.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "websocket": "^1.0.31",
+    "ws": "^7.3.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "passport",
+    "sqlite3"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
