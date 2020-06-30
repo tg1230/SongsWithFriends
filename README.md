@@ -2,22 +2,25 @@
 
 ## Songs With Friends
 
-Bonus Features:
+Deployed on Glitch servers
 
-- Playback errors (host and peers) change the current song name until resolved
-- Skipping tracks (by scrubbing to the end) works
+Backend:
+- express, passport, sqlite
+
+Frontend:
+- react
+
+Features:
+
+- Sync everyone's playback device to the current song in the queue
+- Users are notified of playback errors until they are resolved
+- Skip tracks by scrubbing to the end
 - New peers that join after the playlist has started will sync
 - If everyone that logs in logs out, the app will reset and the next person to login will become host
-- Host can pause and unpause on their playback device and everyone else will pause *(most of the time)
-- Host scrub works *(most of the time)
-- Session recovers from playback errors for both hosts and clients *(most of the time)
-- Muting and unmuting (to a set volume of 50) works *(most of the time)
-
-Known Issues:
-
-- Scrub and pause can be finnicky, seem to be delayed and missed sometimes
-- Mute and unmute is very delayed after the firs time
-- Session recovery can be finnicky (but everyone logging out and back in will reset everything)
+- Host can pause and unpause on their playback device and everyone else will pause
+- Host scrub works
+- Session recovers from playback errors for both hosts and clients
+- Muting and unmuting (to a set volume of 50)
 
 ## Authorship
 
